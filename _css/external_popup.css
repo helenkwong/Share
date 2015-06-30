@@ -1,0 +1,151 @@
+/* Popup.css */
+#backgroundPopup{ 
+	display:none; 
+	position:fixed; 
+	_position:absolute; /* hack for internet explorer 6*/ 
+	height:100%; 
+	width:100%; 
+	top:0; 
+	left:0; 
+	background-image:url(../_images/bg/bg_black.png);
+	background-repeat:repeat;
+	border:1px solid #cecece; 
+	z-index:4; 
+} 
+
+.popupdiv{
+	display:none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+	position:relative;
+	width:auto;
+	height:auto;
+	z-index:8;
+	left: 0px;
+	top: 0px;
+	background-color:transparent;
+}
+
+#popup h1{ 
+	text-align:left; 
+	color:#6FA5FD; 
+	font-size:22px; 
+	font-weight:700; 
+	border-bottom:1px dotted #D3D3D3; 
+	padding-bottom:2px; 
+	margin-bottom:20px; 
+} 
+
+.popupClose{ 
+	color:#FFFFFF;
+	font-size:16px; 
+	line-height:14px; 
+	right:0px;
+	top:0px; 
+	position:absolute; 
+	font-weight:700; 
+	z-index:9;
+	display:block; 
+}
+
+#button{ 
+	text-align:center; 
+	margin:100px; 
+}
+
+.popupClose_bottom{ 
+	color:#FFFFFF;
+	font-size:16px; 
+	line-height:14px; 
+	right:0px;
+	top:0px; 
+	position:absolute; 
+	font-weight:700; 
+	z-index:3;
+	display:block; 
+}
+
+#backgroundPopup_bottom{ 
+	display:none; 
+	position:fixed; 
+	_position:absolute; /* hack for internet explorer 6*/ 
+	height:100%; 
+	width:100%; 
+	top:0; 
+	left:0; 
+	background-image:url(../_images/bg/bg_black.png);
+	background-repeat:repeat;
+	border:1px solid #cecece; 
+	z-index:1; 
+} 
+
+.popupdiv_bottom{
+	display:none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+	position:relative;
+	width:auto;
+	height:auto;
+	z-index:2;
+	left: 0px;
+	top: 0px;
+	background-color:transparent;
+}
+
+/*
+.popupClose_bottom:hover{ 
+	color:#FFFFFF; 
+	font-size:14px; 
+	line-height:14px; 
+	right:0px;
+	top:0px; 
+	z-index:3;
+	position:absolute; 
+	font-weight:700; 
+	display:block; 
+}
+
+.popupClose:hover{ 
+	color:#FFFFFF; 
+	font-size:14px; 
+	line-height:14px; 
+	right:0px;
+	top:0px; 
+	z-index:9;
+	position:absolute; 
+	font-weight:700; 
+	display:block; 
+}*/
+
+
+
+/*.popupDiv{ 
+	display:none; 
+	position:fixed; 
+	_position:absolute; hack for internet explorer 6
+	height:600px; 
+	width:600px; 
+	background:#FFFFFF; 
+	border:2px solid #cecece; 
+	z-index:6; 
+	padding:12px; 
+	font-size:13px; 
+} */
+
+
+
+/*.popupDiv_bottom{ 
+	display:none; 
+	position:fixed; 
+	_position:absolute; hack for internet explorer 6
+	height:600px; 
+	width:600px; 
+	background:#FFFFFF; 
+	border:2px solid #cecece; 
+	z-index:2; 
+	padding:12px; 
+	font-size:13px; 
+} */
+

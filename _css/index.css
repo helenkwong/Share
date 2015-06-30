@@ -1,0 +1,381 @@
+
+#td_loginbox{
+	background-image:url(../_images/login/loginbox_bg.png);
+	width:231px;
+	height:286px;
+	margin-top:0px;
+	background-position:top left; 
+	background-repeat:no-repeat;
+}
+
+#td_indexbox{
+/*	background-image:url(../_images/register/regbox_bg.png);*/
+	width:690px;
+	height:431px;
+	margin-top:0px;
+	vertical-align:top;
+	background-position:top left; 
+	background-repeat:no-repeat;
+	font-weight:bold;
+	color:#353535;
+}
+
+#td_loginbox table{
+	margin-left:10px;
+}
+
+#td_loginname{
+	background-image:url(../_images/login/loginname_icon.png);
+	background-position:top left; 
+	background-repeat:no-repeat;
+	padding-left:30px;
+	vertical-align:text-bottom;
+	height:35px;
+}
+
+#td_loginpw{
+	background-image:url(../_images/login/loginpw_icon.png);
+	background-position:top left; 
+	background-repeat:no-repeat;
+	padding-left:30px;
+	vertical-align:text-bottom;
+	height:35px;
+	
+}
+
+#input_loginname{
+	height:23px;
+	width:170px;
+	font-size:15px;
+}
+
+#input_loginpw,#input_loginTextPw{
+	height:23px;
+	width:170px;
+	font-size:15px;
+}
+/*for chinese verison platform only
+#input_loginpw.font11{
+	font-size:11px;
+}
+ */
+#input_loginpw[type=text]{
+	font-size:15px;
+}
+/*for chinese verison platform only
+#reg_login_pw.font11{
+	font-size:11px;
+}
+*/
+#btn_forgetpw{
+	background-image:url(../_images/login/forgetpw_btn.png);
+	width:97px;
+	height:28px;
+}
+
+#btn_forgetpw:hover{
+	background-position:-97px 0px;
+}
+
+#btn_login{
+	background-image:url(../_images/login/login_btn.png);
+	width:63px;
+	height:33px;
+}
+
+#btn_login:hover{
+	background-position:-63px 0px;
+	width:64px;
+}
+
+
+#btn_goRegister{
+	background-image:url(../_images/register/register_go_btn.png);
+	width:195px;
+	height:48px;
+}
+
+#btn_goRegister:hover{
+	background-image:url(../_images/register/register_go_btn.png);
+	background-position:-196px 0px;
+}
+
+/**--SideTag------------------------------------------------------*/
+#btn_newsTable{
+	background-image:url(../_images/register/btn_news.png);
+	width:116px;
+	height:34px;
+	background-position:-95px;
+	background-repeat:no-repeat;
+}
+
+#btn_aboutusTable{
+	background-image:url(../_images/register/btn_aboutUs.png);
+	width:116px;
+	height:34px;
+	background-position:-104px;
+}
+
+#btn_registerTable{
+	background-image:url(../_images/register/btn_goRegisterBox.png);
+	width:116px;
+	height:34px;
+	background-position:-104px;
+}
+
+#btn_forgetPwTable{
+	background-image:url(../_images/register/btn_forgetPwTable2.png);
+	width:116px;
+	height:34px;
+	background-position:-104px;
+}
+
+#btn_helpTable{
+	background-image:url(../_images/register/btn_helpTable.png);
+	width:116px;
+	height:34px;
+	background-position:-104px;
+}
+
+#btn_newsTable.selected,#btn_registerTable.selected,#btn_aboutusTable.selected,#btn_forgetPwTable.selected,#btn_helpTable.selected{
+	background-position:5px;
+}
+/**--RegisterTable------------------------------------------------------*/
+#title_regIcon{
+	background-image:url(../_images/register/register_title.png);
+	background-position:top left; 
+	background-repeat:no-repeat;
+	background-position: 10px 0px; 
+	padding-left:30px;
+	height:45px;
+	width:640px;
+}
+
+#td_uploadImg{
+	width:135px;
+	background-image:url(../_images/register/register_img2.png);
+	background-repeat:no-repeat;
+	background-position:8px 0px;	
+	/*background-position-x:8px;*/	
+}
+
+#div_uploadUserImg{
+	height:92px;
+	width:98px;
+	background-position:top left; 
+	margin-left:14px;
+	margin-top:5px;
+	margin-top:6px\9;
+	display:block;
+}
+
+#uploadImg{
+	width:135px;
+}
+
+#table_signup_form{
+	background-color:white;
+	width:510px;
+	height:100%;
+	margin-top:8px;
+}
+
+#table_signup_form td{
+	padding-left:10px;
+	padding-top:6px;
+}
+
+#btn_showChoice{
+	background-image:url(../_images/bg/more.png);
+	height:26px;
+	width:29px;
+	background-position:bottom;
+	padding-left:3px;
+}
+
+#btn_submitRegister{
+	background-image:url(../_images/register/btn_register.png);
+	height:32px;
+	width:64px;
+	background-position:top left; 
+}
+
+#btn_submitRegister:hover{
+	background-position:-64px 0px;
+}
+
+
+/**--About us Table------------------------------------------------------*/
+
+#title_aboutUsIcon{
+	background-image:url(../_images/register/title_indexAboutUs.png);
+	background-position:top left; 
+	background-repeat:no-repeat;
+	background-position: 10px 0px; 
+	padding-left:30px;
+	height:45px;
+	width:640px;
+}
+
+#td_indexNewsImg,#td_aboutUsImg{
+	padding-left:10px;
+	width:120px;
+}
+
+/**--Index News------------------------------------------------------*/
+#title_indexNewsIcon{
+	background-image:url(../_images/register/title_indexNews.png);
+	background-position:top left; 
+	background-repeat:no-repeat;
+	background-position: 10px 0px; 
+	padding-left:30px;
+	height:45px;
+	width:640px;
+}
+
+
+.img_leadImg{
+	background-image:url(../_images/register/icon_lead.png);
+	height:111px;
+	width:121px;
+	background-position:top left; 
+}
+
+.W1024H700{
+	width:1024px;
+	height:700px;
+}
+
+
+.W231H126{
+	width:231px;
+	height:126px;
+}
+.W650{
+	width:650px;
+}
+
+.H90{
+	height:90px;
+}
+.H10{
+	height:10px;
+}
+
+.H250{
+	height:250px;
+}
+
+.td_whiteTopW688{
+	background-image:url(../_images/bg/whiteTopW688.png);
+	width:688px;
+	height:10px;
+	background-position:top left; 
+	background-repeat:no-repeat;
+}
+
+.td_whiteMiddleW688{
+	background-image:url(../_images/bg/whiteMiddleW688.png);
+	width:688px;
+	height:auto;
+	min-height:431px;
+	background-position:top left; 
+	background-repeat:repeat-y;
+}
+
+.td_whiteBottomW688{
+	background-image:url(../_images/bg/whiteBottomW688.png);
+	width:688px;
+	height:10px;
+	background-position:top left; 
+	background-repeat:no-repeat;
+}
+
+#reg_pwHint{
+	margin-top:3px;
+}
+
+#reg_email,#reg_pwHintAns,#reg_message,#reg_login_pw{
+	vertical-align:text-bottom;
+	height:11px \9;
+}
+div{
+	position:absolute;
+}
+
+a{
+	background-repeat:no-repeat;
+}
+
+.td_vBottom{
+	vertical-align:middle;
+}
+
+
+input:-moz-placeholder {
+	font-weight:bold;
+	color:#7A7A7A;
+}
+
+.previewImg{
+	width:98px;
+	height:92px;
+	background-color:white;
+	font-size:12px;
+	color:#7A7A7A;
+}
+
+#table_sub_forgetPw{
+	margin-left:10px;
+	width:640px;
+}
+
+#title_forgetPw{
+	background-image:url(../_images/register/title_forgetPw.png);
+	background-position:top left; 
+	background-repeat:no-repeat;
+	background-position: 10px 0px; 
+	padding-left:30px;
+	height:45px;
+	width:640px;
+}
+
+#div_leftBtn{
+	margin-left:-2px;
+	margin-top:40px;
+	position:absolute;
+}
+
+#a_leftBtn{
+	background-image:url(../_images/register/leftBtn.png);
+	background-repeat:no-repeat;
+	width:16px;
+	height:19px;
+}
+
+#div_rightBtn{
+	margin-left:110px;
+	margin-top:40px;
+	position:absolute;
+}
+
+
+#a_rightBtn{
+	background-image:url(../_images/register/rightBtn.png);
+	background-repeat:no-repeat;
+	width:17px;
+	height:19px;
+}
+#a_leftBtn:hover,#a_rightBtn:hover{
+	background-position:0px -20px;
+}
+
+#guest_login{
+	background-image:url(../_images/register/btn_guest.png);
+	height:55px;
+	width:143px;
+}
+
+#guest_login:hover{
+	background-position:-143px;
+}
