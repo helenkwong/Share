@@ -4,7 +4,7 @@
 	include_once '_subPHP/headerPHP.php';
 	include_once '_subPHP/headerHTML.php';
 ?>
-<table class="W1024H700" class="vertAlign_top" >
+<table class="W1024H700 vertAlign_top" >
 	<tr>
 		<td class="W3" rowspan="2"></td>
 		<td class="W231H126" ></td>
@@ -12,13 +12,13 @@
 	</tr>
 	<tr>
 		<td id="td_loginbox" rowspan="2" class="vertAlign_top" >
-			<form id="loginForm">
+			<form id="loginForm" action="" >
 				<table id="table_loginbox">
 					<tr>
 						<td class="H90" colspan="3"></td>
 					</tr>
 					<tr >
-						<td id="td_loginname" colspan="3"><input id="input_loginname" type="text" placeholder="Login name" value="" ></td>
+						<td id="td_loginname" colspan="3"><input id="input_loginname" type="text" placeholder="Login name" value="" /></td>
 					</tr>
 					<tr>
 						<td class="H10" colspan="3"></td>
@@ -26,10 +26,10 @@
 					<tr>
 						<td id="td_loginpw" colspan="3">
 						<?php if (detectIE()) { ?>
-						<input id="input_loginTextPw" type="text" placeholder="Login password">
-						<input id="input_loginpw" type="password" class="display_none" >
+						<input id="input_loginTextPw" type="text" placeholder="Login password" />
+						<input id="input_loginpw" type="password" class="display_none" />
 						<?php }else{ ?>
-							<input id="input_loginpw" type="text" placeholder="Login password" value="">
+							<input id="input_loginpw" type="text" placeholder="Login password" value="" />
 						<?php } ?>
 						</td>
 					</tr>
@@ -56,7 +56,7 @@
 			</form>
 		</td>
 		<td id="td_indexbox">
-			<table width="100%" height="100%">
+			<table id="table_main">
 				<tr><td class="td_whiteTopW688"></td></tr>
 				<tr>
 					<td class="td_whiteMiddleW688">
@@ -77,14 +77,14 @@
 											<div id="div_leftBtn"><a id="a_leftBtn"></a></div>
 												<div id="div_uploadUserImg"></div><div id="div_rightBtn"><a id="a_rightBtn"></a></div><br /><br /><br /><br /><br /><br />
 												<a id="btn_uploadUserImg"></a>
-												<form id="uploadImgForm" method="POST" enctype="multipart/form-data" action="_upload/zp_ajaximage.php">
+												<form id="uploadImgForm" method="post" enctype="multipart/form-data" action="_upload/zp_ajaximage.php">
 													<input type="file" name="uploadImg" id="uploadImg" size="8" />	
 													<input name="btn_triggerUpload" id="btn_triggerUpload" type="submit" value="Upload" />
 												</form>
 												 
 											</td>
 											<td>
-												<form id="signupForm">
+												<form id="signupForm" action="">
 													<table id="table_signup_form" class="font16">
 														<tr><td class="basicFontSyle"><input type="radio" name="reg_identity" value="student" checked="checked" />Student <input type="radio"  name="reg_identity" value="pre_teacher"/>Teacher &nbsp; School:<select class="basicFontSyle" id="reg_organisation" name="reg_organisation" >
 														<option id="opt_sch0001" selected="selected">School A</option><option id="opt_sch0002">School B</option><option id="opt_sch0003">School C</option><option id="opt_sch0004">School D</option><option id="opt_sch0005">School E</option><option id="opt_sch0006">School F</option><option id="opt_sch0007">School G</option><option id="opt_sch0000">School H</option></select></td></tr>
@@ -101,7 +101,7 @@
 														<tr><td class="td_vBottom">
 														Forget Password Setting<br />
 														<input type="checkbox" id="setEmail" />Email：<input type="text" size="27" class="inputData emailInput" id="reg_email" name="reg_email" value="" /><span class="font15 font_grey"></span>
-														<br /><input type="checkbox" id="setQuesHint" />Forget password setting：<select name="reg_pwHint" id="reg_pwHint"  class="basicFontSyle"><option id="opt_pwQues01" selected="selected" >Question A?</option><option id="opt_pwQues02">Question B?</option><option id="opt_pwQues03">Question C?</option><option id="opt_pwQues04">Question D?</option></select><br />&nbsp;&nbsp;&nbsp;&nbsp;Your Answer:<input id="reg_pwHintAns" id="reg_pwHintAns" type="text" /></td></tr>
+														<br /><input type="checkbox" id="setQuesHint" />Forget password setting：<select name="reg_pwHint" id="reg_pwHint"  class="basicFontSyle"><option id="opt_pwQues01" selected="selected" >Question A?</option><option id="opt_pwQues02">Question B?</option><option id="opt_pwQues03">Question C?</option><option id="opt_pwQues04">Question D?</option></select><br />&nbsp;&nbsp;&nbsp;&nbsp;Your Answer:<input id="reg_pwHintAns" type="text" /></td></tr>
 														
 														<tr id="tr_teacherConfirm" class="display_none"><td>Teacher Confirmation<br />
 														<span class="font15">Confirmation password： <input type="text" size="7" id="reg_teacherComfirmCode" name="reg_teacherComfirmCode"/>School email:<input type="text" class="emailInput" size="24" id="reg_teacherComfirmEmail" name="reg_teacherComfirmCodeEmail" value="" /></span><br />
@@ -141,7 +141,7 @@
 											</td>
 											<td class="W440">
 												<br />
-												<img src="_images/register/img_aboutUs.png" width="498px" height="279px" />
+												<img src="_images/register/img_aboutUs.png" width="498px" height="279px" alt="about us"/>
 											</td>
 										</tr>
 									</table>
@@ -184,7 +184,7 @@
 												<table id="table_sub_forgetPw">
 													<tr>
 														<td class="bg_white pad5">		 
-														<label>Please provide</label><input type="radio" name="getPw_info_radio" value="email" checked /><label>Registered email</label> &nbsp; <input type="radio" name="getPw_info_radio" value="loginname" /><label>Login name</label>
+														<label>Please provide</label><input type="radio" name="getPw_info_radio" value="email" checked="checked" /><label>Registered email</label> &nbsp; <input type="radio" name="getPw_info_radio" value="loginname" /><label>Login name</label>
 														</td>
 													</tr>
 													<tr class="bg_white pad5">
@@ -211,7 +211,7 @@
 															<option id="opt_getPwQues02">Question B？</option>
 															<option id="opt_getPwQues03">Question C？</option>
 															<option id="opt_getPwQues04">Question D？</option></select><br />&nbsp;&nbsp;&nbsp;
-															Your answer：<input id="getPwHintAns" id="getPwHintAns" type="text" disabled="disabled" />
+															Your answer：<input id="getPwHintAns" type="text" disabled="disabled" />
 														</td>
 													</tr>	
 													<tr class="bg_white pad5">
@@ -220,7 +220,7 @@
 														</td>
 													</tr>									
 													<tr class="bg_white pad5">
-														<td><img id="forgetpw_loading" class="display_none" src="_images/bg/smallloading.gif" /><br />
+														<td><img id="forgetpw_loading" class="display_none" src="_images/bg/smallloading.gif" alt="loading"/><br />
 														&nbsp;<a id="forgetpw_submit" class="submit_btn" name="forgetpw_submit"></a>
 														</td>
 													</tr>
@@ -256,7 +256,7 @@
 			</table>
 		</td>
 	</tr>
-	<tr height="100%">
+	<tr class="H100">
 		<td ></td>
 		<td></td>
 	</tr>

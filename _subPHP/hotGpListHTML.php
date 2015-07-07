@@ -5,7 +5,7 @@
 	</tr>
 	<tr>
 		<td>
-		<img src="_images/study/title_hot_gp_list.png" />
+		<img src="_images/study/title_hot_gp_list.png" alt="title hot group"/>
 		</td>
 	</tr>
 	<tr>

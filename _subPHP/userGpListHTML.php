@@ -11,7 +11,7 @@
 	<tr>
 		<td id="td_userGpList" class="roundEdge6">
 			<span class="text_ownerName"><?php if(isset($_SESSION['realname'])){echo($_SESSION['realname']);} ?></span><br /><br />Joined Group：
-			<table id="table_userGpList"></table>
+			<table id="table_userGpList"><tr><td></td></tr></table>
 		</td>
 	</tr>
 	<tr>
@@ -30,7 +30,7 @@
 	</tr>
 	<tr>
 		<td>
-			<img src="_images/study/title_related_gp_list.png" />
+			<img src="_images/study/title_related_gp_list.png" alt="user's group" />
 		</td>
 	</tr>
 	<tr>
@@ -52,7 +52,7 @@
 	</tr>
 	<tr>
 		<td>
-		<img src="_images/study/title_hot_gp_list.png" />
+		<img src="_images/study/title_hot_gp_list.png" alt="hot group title" />
 		</td>
 	</tr>
 	<tr>

@@ -1,33 +1,3 @@
-table_newGp/**.bg_top{
-	background-image:url(../_images/study/whiteTopW999_hand.png);
-	width:999px;
-	height:42px;
-	margin-top:0px;
-	background-position:top left; 
-	background-position:-1px -1px; 
-	background-repeat:no-repeat;
-}
-
-.bg_middle{
-	background-image:url(../_images/study/whiteMiddleW999.png);
-	width:999px;
-	height:auto;
-	margin-top:0px;
-	min-height:400px;
-	background-position:top left; 
-	background-position:-1px 0px; 
-	background-repeat:repeat-y;
-}
-
-.bg_bottom{
-	background-image:url(../_images/study/whiteBottomW999.png);
-	width:999px;
-	height:45px;
-	margin-top:0px;
-	background-position:top left; 
-	background-position:-2px -1px; 
-	background-repeat:no-repeat;
-}*/
 
 #sideContent{
 	width:150px;
@@ -262,22 +232,6 @@ table_newGp/**.bg_top{
 .gp_subject{
 	text-align:center;
 }
-/*
-.gp_subject_L{
-	background-image:url(../_images/study/gp_subject_L.png);
-	width:5px;
-	height:26px;
-	background-position:10px;
-	background-repeat:no-repeat;
-}
-.gp_subject_R{
-	background-image:url(../_images/study/gp_subject_R.png);
-	width:4px;
-	height:26px;
-	background-position:10px;
-	background-repeat:no-repeat;
-}*/
-
 .gp_subject_all{
 	width:130px;
 	height:28px;

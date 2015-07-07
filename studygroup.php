@@ -11,7 +11,7 @@
 		<td id="sideContent">
 			<table>
 				<tr><td height="126px"></td></tr>
-				<tr height="160px"><td id="img_side_gpIcon"><div id="div_gpIcon"><img id="img_gpIcon" src="_images/studyGroup/btn_notready.png" width="142px" height=100px" /></div></td></tr>
+				<tr class="H160"><td id="img_side_gpIcon"><div id="div_gpIcon"><img id="img_gpIcon" src="_images/studyGroup/btn_notready.png" width="142px" height="100px" alt="group icon" /></div></td></tr>
 				<tr><td><label id="text_sideGpName" class="roundEdge" >ID:<span id="span_gp_id"><?php if(isset($_GET['id'])){echo($_GET['id']);}?></span></label></td></tr>
 				<tr><td><?php include_once('_subPHP/userGpListHTML.php') ?></td></tr>
 			</table>
@@ -19,14 +19,14 @@
 		<td>
 			<table id="mainContent">
   				<tr>
-					<td height="112px"><div class="floatRight"><a id="btn_logout">>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home & Logout &nbsp;&nbsp;</a></div>
+					<td height="112px"><div class="floatRight"><a id="btn_logout">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home &amp; Logout &nbsp;&nbsp;</a></div>
 					</td>
 				</tr>
   				<tr>
 					<td>
 						<table id="mainContentTop">
 			  				<tr>
-								<td class="bg_TopWhite765"><div class="floatLeft"><a class="btn_back" href="study.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back &nbsp;&nbsp;</a></div><img src="_images/studyGroup/title_TopStudyGroupBox2.png" width="820" />
+								<td class="bg_TopWhite765"><div class="floatLeft"><a class="btn_back" href="study.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back &nbsp;&nbsp;</a></div><img alt="group box" src="_images/studyGroup/title_TopStudyGroupBox2.png" width="820" />
 								</td>
 							</tr>
 			  				<tr>
@@ -35,9 +35,9 @@
 			  							<tr>
 			  								<td class="W90"></td>
 			  								<td class="H90 W600" id="td_groupInfoTop" >
-			  									<table class="font15" id="table_groupInfoTop" class="W600" >
+			  									<table class="font15 W600" id="table_groupInfoTop" >
 			  										<tr>
-			  											<td class="W100 textAlignRight">Theme：</td><td id="td_gp_topic" class="W300"><label class="label_loading"><img src="_images/bg/100loading.gif" /></label></td>
+			  											<td class="W100 textAlignRight">Theme：</td><td id="td_gp_topic" class="W300"><label class="label_loading"><img alt="loading" src="_images/bg/100loading.gif" /></label></td>
 			  										</tr>
 			  										<tr>
 			  											<td class="W100 textAlignRight">Introduction：</td><td id="td_gp_intro"></td>
@@ -86,7 +86,7 @@
 											</td>
 										</tr>
 			  							<tr>
-											<td class="bg_stage" id="bg_stage"><div id="div_stage"><label class="Scratch_loading display_none"><img src="_images/bg/bigloading.gif" /></label><iframe id="iframe_Scratch" allowtransparency ="true" class="normal roundEdge6 needBack" src="" frameborder="0" allowfullscreen></iframe><a class="btn_quitFullScreen display_none" id="btn_quitFullScreen"></a></div>
+											<td class="bg_stage" id="bg_stage"><div id="div_stage"><label class="Scratch_loading display_none"><img alt="loading" src="_images/bg/bigloading.gif" /></label><iframe id="iframe_Scratch" allowtransparency ="true" class="normal roundEdge6 needBack" src="" frameborder="0" allowfullscreen></iframe><a class="btn_quitFullScreen display_none" id="btn_quitFullScreen"></a></div>
 											</td>
 										</tr>
 			  						</table>
@@ -98,7 +98,7 @@
 											</td>
 										</tr>
 										<tr>
-											<td colspan="2" height="46px"><img src="_images/studyGroup/title_gpUpdate.png" />
+											<td colspan="2" height="46px"><img alt="title of updating group" src="_images/studyGroup/title_gpUpdate.png" />
 											</td>
 										</tr>
 			  							<tr>
@@ -114,13 +114,13 @@
 			  							<tr>
 											<td class="text_justify font15 vertAlign_top padTop5 floatRight">Introduction:
 											</td>
-											<td><textarea  class="font15" id="editGp_intro"></textarea>
+											<td><textarea  class="font15" id="editGp_intro" rows="" cols="" ></textarea>
 											</td>
 										</tr>
 										<tr>
 											<td class="text_justify font15 vertAlign_top padTop5 floatRight">Control:
 											</td>
-											<td><textarea class="font15" id="editGp_control"></textarea>
+											<td><textarea class="font15" id="editGp_control" rows="" cols="" ></textarea>
 											</td>
 										</tr>
 			  							<!--<tr><td class="text_justify font15 vertAlign_top padTop5 floatRight">關鍵字：</td><td><input type="text" size="40" class="font15" id="editGp_intro"/></td></tr>-->
@@ -142,7 +142,7 @@
 			  							<tr >
 											<td class=" text_justify font15 vertAlign_top padTop5 floatRight">Group：
 											</td>
-											<td><textarea class="font15" id="editGp_member" ></textarea>
+											<td><textarea class="font15" id="editGp_member" rows="" cols="" ></textarea>
 											</td>
 										</tr>
 			  							<?php }?>
@@ -154,7 +154,7 @@
 									<div class="bg_whitew426">
 				  						<table id="table_gp_detail" class="pos_relative">
 											<tr ><td class="H5"></td></tr>
-											<tr ><td class="H15"><img src="_images/studyGroup/title_gpinfo.png" />
+											<tr ><td class="H15"><img alt="title of group information" src="_images/studyGroup/title_gpinfo.png" />
 											<?php if($_ulevel>5){ ?>
 											<a id="btn_joinGp"></a><a class="display_none" id="btn_unjoinGp"></a>
 											<?php } ?>
@@ -164,8 +164,8 @@
 											<tr><td  class="font15 H30">Project link： &nbsp;<br /><a id="btn_setScratch" class="display_none"></a>&nbsp;<a id="btnhints_scratch" class="hint_button display_none"></a></td></tr>
 											<tr><td  class="font15" id="td_gp_scratch" ><label id="label_gp_scratch"></label><a id="btn_goscratchsite" target="_blank" class="display_none"></a></td></tr>
 											<?php if($_ulevel>5){ ?>
-											<tr class="display_none" id="tr_hints_scratch" ><td><img id="imghints_scratch" src="_images/studyGroup/hints_scratch.jpg"/><a class="btn_close_30" id="btn_close_scratchHint"></a></td></tr>
-											<tr><td><textarea class="font16 display_none" id="textarea_gp_scratch" ></textarea><span id="errorspan_scratch" class="display_none error_msg font16"><br />Invalid Scratch project link<br /></span><a id="btn_submit_editScratch" class="submit_btn25 display_none"></a>
+											<tr class="display_none" id="tr_hints_scratch" ><td><img alt="hints of adding Scratch" id="imghints_scratch" src="_images/studyGroup/hints_scratch.jpg"/><a class="btn_close_30" id="btn_close_scratchHint"></a></td></tr>
+											<tr><td><textarea class="font16 display_none" id="textarea_gp_scratch" rows="" cols="" ></textarea><span id="errorspan_scratch" class="display_none error_msg font16"><br />Invalid Scratch project link<br /></span><a id="btn_submit_editScratch" class="submit_btn25 display_none"></a>
 											<div id="div_udpatedScatch" class="display_none">Update notice：<br /><a id="btn_udpatedScatch"></a></div></td></tr>	
 											<?php } ?>
 											<tr><td  class="font15">Members：</td></tr>
@@ -173,30 +173,30 @@
 											<!-- <tr><td  class="font15">關鍵字：(請用逗號分隔)</td></tr>
 											<tr><td  class="font15">數字 中國數目字 阿拉伯數目</td></tr> -->
 											<tr><td  class="font15">&nbsp;</td></tr>
-											<tr><td  class="font15">Comment：<span class="font15 font_lightBlue">(Go to"<a href="#a">Group discussion</a>" for more comments)</span><br /><!--<textarea cols="30" class="font15" id="textarea_quickCommment" placeholder="I want to comment about..." /></textarea><br /><a id="btn_submit_comment"></a><span id="span_quickComment" class="error_msg font_grey display_none">Thank you!</span>--></td></tr>
+											<tr><td  class="font15">Comment：<span class="font15 font_lightBlue">(Go to"<a href="#a">Group discussion</a>" for more comments)</span><br /><!--<textarea cols="30" class="font15" id="textarea_quickCommment" placeholder="I want to comment about..." ></textarea><br /><a id="btn_submit_comment"></a><span id="span_quickComment" class="error_msg font_grey display_none">Thank you!</span>--></td></tr>
 											<tr><td height="100%">&nbsp;&nbsp;</td></tr>
 				  						</table>
 									</div>
 								</td>
 							</tr>
 							<tr >
-			  					<td colspan="2" class="bg_TopWhite765" ><img src="_images/studyGroup/title_gpdiscuss.png" name="a" id="a" />
+			  					<td colspan="2" class="bg_TopWhite765" ><img alt="title of group discussion" src="_images/studyGroup/title_gpdiscuss.png" name="a" id="a" />
 								</td>
 			  				</tr>
 							<tr>
 			  					<td colspan="2" class="bg_middleWhite765">
-									<Table id="table_newpost" name="table_newpost">
+									<table id="table_newpost">
 										<tr>
-											<td><img id="img_side_ownerIcon" width="60px" height="56px" class="roundEdge6" src="<?php if(isset($_SESSION['userpic'])){echo($_SESSION['userpic']);}else {echo('_images/studyGroup/register_img260.png');}?>" /><br /><label id="text_sideOwnerName" class="text_ownerName roundEdge font14"><?php if(isset($_SESSION['realname'])){echo($_SESSION['realname']);} else{echo('Student');}?></label>
+											<td><img alt="user icon" id="img_side_ownerIcon" width="60px" height="56px" class="roundEdge6" src="<?php if(isset($_SESSION['userpic'])){echo($_SESSION['userpic']);}else {echo('_images/studyGroup/register_img260.png');}?>" /><br /><label id="text_sideOwnerName" class="text_ownerName roundEdge font14"><?php if(isset($_SESSION['realname'])){echo($_SESSION['realname']);} else{echo('Student');}?></label>
 											</td>
-											<td><img src="_images/studyGroup/img_postTrangle.png" />
+											<td><img alt="post image" src="_images/studyGroup/img_postTrangle.png" />
 											</td>
 											<td>
-												<div id="div_post_topic"><input id="input_post_topic" type="text" class="font18"  placeholder="The theme is:"  /><br /><a class="font13 a_postTopicHint roundEdge6">Information sharing</a><a class="font13 a_postTopicHint roundEdge6">Idea sharing</a><a class="font13 a_postTopicHint roundEdge6">Technical Support</a><a class="font13 a_postTopicHint roundEdge6">Comment</a></div><textarea id="textarea_post_content" class="font16" placeholder="I want to comment about..." /></textarea>
+												<div id="div_post_topic"><input id="input_post_topic" type="text" class="font18"  placeholder="The theme is:"  /><br /><a class="font13 a_postTopicHint roundEdge6">Information sharing</a><a class="font13 a_postTopicHint roundEdge6">Idea sharing</a><a class="font13 a_postTopicHint roundEdge6">Technical Support</a><a class="font13 a_postTopicHint roundEdge6">Comment</a></div><textarea id="textarea_post_content" class="font16" placeholder="I want to comment about..." rows="" cols="" ></textarea>
 												<table>
 													<tr>
 														<td><div class="div_comment_hints font13"><a>Good!</a><a>Interesting!</a><a>Too easy!</a><a>I dont understand.</a><a>Beautiful!</a><a>Enjoy!</a><a>How do we play the game?</a><a>Problem..</a><a>Add more sound effects</a><a>Cheer up！</a><a>Looking forward to the project!</a></div></td>
-														<td><img src="_images/bg/thinkR.png" />
+														<td><img alt="image bubble" src="_images/bg/thinkR.png" />
 														</td>
 													</tr>
 												</table>
@@ -235,22 +235,22 @@
 													</tr>
 													<tr id="tr_addScratch" class="tr_subAttachMenu font15 display_none">
 														<td class="text_justify">Add Scratch project link(s)：</td>
-														<td><input type="text" id="input_newpost_scratch" /><a class="btn_add roundEdge6">Add</a>&nbsp;<a class="hint_button">&nbsp;&nbsp;&nbsp;</a><div class="divhints_newpost pos_relative display_none"><img src="_images/studyGroup/hints_scratch.jpg" /><a class="btn_close_30 newpost_hint_close"></a></div>
+														<td><input type="text" id="input_newpost_scratch" /><a class="btn_add roundEdge6">Add</a>&nbsp;<a class="hint_button">&nbsp;&nbsp;&nbsp;</a><div class="divhints_newpost pos_relative display_none"><img alt="hint-Scratch" src="_images/studyGroup/hints_scratch.jpg" /><a class="btn_close_30 newpost_hint_close"></a></div>
 														</td>
 													</tr>
 													<tr id="tr_addLink" class="tr_subAttachMenu font15 display_none">
 														<td>Add link(s)：</td>
-														<td><input type="text" id="input_newpost_link" /><a id="submit_newpost_addlink" class="btn_add roundEdge6">Add</a>&nbsp;<a id="btnhints_newpost_link" class="hint_button">&nbsp;&nbsp;&nbsp;</a><div class="divhints_newpost pos_relative display_none"><img src="_images/studyGroup/hint_link.jpg" /><a class="btn_close_30 newpost_hint_close"></a></div>
+														<td><input type="text" id="input_newpost_link" /><a id="submit_newpost_addlink" class="btn_add roundEdge6">Add</a>&nbsp;<a id="btnhints_newpost_link" class="hint_button">&nbsp;&nbsp;&nbsp;</a><div class="divhints_newpost pos_relative display_none"><img alt="hint of adding link" src="_images/studyGroup/hint_link.jpg" /><a class="btn_close_30 newpost_hint_close"></a></div>
 														</td>
 													</tr>
 													<tr id="tr_addVideo" class="tr_subAttachMenu font15 display_none">
 														<td>Add Youtube Link(s)：</td>
-														<td><input type="text" id="input_newpost_video" /><a class="btn_add roundEdge6">Add</a>&nbsp;<a id="btnhints_newpost_video" class="hint_button">&nbsp;&nbsp;&nbsp;</a><div class="divhints_newpost pos_relative display_none"><img src="_images/studyGroup/hint_video.png" /><a class="btn_close_30 newpost_hint_close"></a></div>
+														<td><input type="text" id="input_newpost_video" /><a class="btn_add roundEdge6">Add</a>&nbsp;<a id="btnhints_newpost_video" class="hint_button">&nbsp;&nbsp;&nbsp;</a><div class="divhints_newpost pos_relative display_none"><img alt="hint of adding video" src="_images/studyGroup/hint_video.png" /><a class="btn_close_30 newpost_hint_close"></a></div>
 														</td>
 													</tr>
 													<tr>
 														<td></td>
-														<td><img class="display_none" src="_images/bg/100loading.gif" id="newpost_loading" />
+														<td><img alt="loading" class="display_none" src="_images/bg/100loading.gif" id="newpost_loading" />
 														</td>
 													</tr>
 												</table>
@@ -271,10 +271,10 @@
 											<td><p class="font_grey font15">*Please comment after login*</p></td>
 										</tr>
 										<?php } ?>
-									</Table>
+									</table>
 									<table id="post_table">
 										<tr>
-											<td><img src="_images/bg/100loading.gif" /></td>
+											<td><img alt="loading" src="_images/bg/100loading.gif" /></td>
 										</tr>
 									</table>
 									<a class="display_none" id="btn_morepost">More sharing>>></a>
